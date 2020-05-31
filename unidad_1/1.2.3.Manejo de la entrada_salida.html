@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.2.3.Manejo de la entrada/salida</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>	
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.2.An&aacute;lisis de los componentes</h3>
+			<hr>
+			<h5>1.2.3.Manejo de la entrada/salida</h5>
+			<hr>
+			<h6>1.2.3.1.M&oacute;dulos de entrada/salida</h6>
+			<p>
+				Los m&oacute;dulos de entrada y salida est&aacute;n conectados con el procesador y la memoria principal, y cada uno controla uno o m&aacute;s dispositivos externos. La arquitectura de E/S es su interfaz con el exterior, esta arquitectura se dise&ntilde;a de manera que permita una forma sistem&aacute;tica de controlar las interacciones con el mundo exterior y proporcione al sistema operativo la informaci&oacute;n que necesita para gestionar la actividad de E/S. Hay tres t&eacute;cnicas de E/S principales.
+			</p>
+			<h6>1.2.3.2.Entrada/salida programada</h6>
+			<p>
+				Se produce bajo el control directo y continuo del programa que solicita la operaci&oacute;n de E/S. tanto en la entrada y salida programada como con interrupciones, el procesador es responsable de extraer los datos de la memoria en una salida, y almacenar los datos en la memoria principal. El problema con la E/S es que el procesador tiene que esperar un tiempo considerable hasta que el modulo en cuesti&oacute;n est&eacute; preparado para recibir o transmitir datos</p>
+			<h6>1.2.3.3.Entrada y salida mediante interruptores</h6>
+			<p>
+				El programa genera una orden de E/S y despu&eacute;s contin&uacute;a ejecut&aacute;ndose hasta que el hardware lo interrumpe para indicar que la operaci&oacute;n ha concluido. La entrada y salida con interrupciones, aunque es m&aacute;s eficiente que la sencilla, tambi&eacute;n requiere la intervenci&oacute;n activa del procesador para transferir los datos entre la memoria y el m&oacute;dulo de E/S.
+			</p>
+			<h6>1.2.3.4.Acceso directo a memoria</h6>
+			<p>
+				Un procesador de E/S espec&iacute;fico toma el control de la operaci&oacute;n para transferir un bloque de datos. El m&oacute;dulo DMA(Acceso Directo a Memoria) es capaz de imitar al procesador y, de hecho, es capaz de transferir datos desde memoria a trav&eacute;s del bus del sistema. El m&oacute;dulo DMA debe utilizar el bus solo cuando el procesador no lo necesita, o debe forzar al procesador a que suspenda temporalmente su funcionamiento. Un m&oacute;dulo de E/S no es &uacute;nicamente un conector mec&aacute;nico que permite enchufar el dispositivo al bus del sistema, sino que adem&aacute;s, est&aacute; dotado de inteligencia, es decir, contiene la l&oacute;gica necesaria para permitir la comunicaci&oacute;n entre el perif&eacute;rico y el bus.
+			</p>
+			<h6>1.2.3.5.Canales y procesadores de entrada/salida.</h6>
+			<p>
+				El canal de entrada y salida representa una ampliaci&oacute;n del concepto de DMA. Un canal de entrada y salida puede ejecutar instrucciones de entrada y salida, lo que le confiere un control completo sobre las operaciones de entrada y salida. Un canal selector controla varios dispositivos de velocidad elevada y en un instante dado, se dedica a transferir datos a uno de esos dispositivos, es decir el canal de entrada y salida selecciona un dispositivo y efect&uacute;a la transferencia de datos. Cada dispositivo o peque&ntilde;o grupo de dispositivos es manejado por un controlador o m&oacute;dulo de E/S, as&iacute; el canal de entrada y salida se utiliza en lugar de la CPU para controlar estos controladores de E/S. Un canal multiplexor puede manejar la entrada y salida de varios dispositivos al mismo tiempo. Para dispositivos de velocidad reducida, un multiplexor de byte acepta o transmite caracteres tan r&aacute;pido como es posible a varios dispositivos.
+			</p>
+			<div class="atras"><a href="1.2.2.Memoria.html">Atrás</a></div><div class="siguiente"><a href="1.2.4.Buses.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

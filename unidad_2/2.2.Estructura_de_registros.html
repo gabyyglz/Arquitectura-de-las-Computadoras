@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2.2.Estructura de registros</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad II</h1>
+			<hr>
+			<h3>2.2.Estructura de registros</h3>
+			<hr>
+			<h6>Qu&eacute; son los reistros del CPU</h6>
+			<p>Se emplean para controlar las instrucciones en ejecuci&oacute;n, manejar direccionamiento de memoria y propiciar la capacidad aritm&eacute;tica.
+			Los registros vienen de tres tipos: datos, direcciones e &iacute;ndice, que tiene lugar en casi todos los aspectos de la operaci&oacute;n del CPU. El tama&ntilde;o de un registro depende del CPU; los m&aacute;s simples tienen registros que aceptan 8 o 16 bits de datos y los m&aacute;s complejos tienen registros de 32, 48 o 64 bits.
+			</p>
+			<h6>Clasificaci&oacute;n de los Registros</h6>
+			<ul class="deff">
+				Registro de datos
+				<li>Un CPU puede funcionar con datos en uno de tres modos: entre dos registros, entre registros y una ubicaci&oacute;n de Memoria de acceso al azar (RAM - Random-Access Memory) y entre dos ubicaciones RAM. Como el CPU est&aacute; conectado directamente a los registros, las operaciones que implican dos registros son las m&aacute;s r&aacute;pidas; las que se dan entre ubicaciones RAM son las m&aacute;s lentas.  Es decir, junta dos registros, a&ntilde;ade un registro a una ubicaci&oacute;n RAM, o a&ntilde;ade dos ubicaciones RAM.</li>
+				Registro de direcciones
+				<li>Para que un CPU pueda almacenar y recuperar datos en RAM, debe tener la direcci&oacute;n de la memoria de la informaci&oacute;n. Esas operaciones que implican RAM usan registros de direcci&oacute;n de memoria. EL CPU no realiza aritm&eacute;tica en estos registros; en cambio, los usa para ubicar datos que necesita.</li>
+				Registro de &iacute;ndice
+				<li>Un CPU no puede hacer matem&aacute;ticas en registros de datos, aunque puede hacerlo indirectamente con un registro de &iacute;ndice. &eacute;ste trabaja con los registros de datos, permitiendo a un programa procesar hilos de informaci&oacute;n eficazmente.</li>
+				Reistros de segmento
+				<li>Un registro de segmento tiene 16 bits de longitud y facilita un &aacute;rea de memoria para direccionamiento conocida como segmento actual.
+				<ul>
+					Registro Cs
+					<li>El dos almacena la direcci&oacute;n inicial del segmento de c&oacute;digo de un programa en el registro CS. Indica la direcci&oacute;n de una instrucci&oacute;n que es buscada para su ejecuci&oacute;n.</li>
+					Registro Ds
+					<li>Genera una referencia a la localidad de un byte espec&iacute;fico en el segmento de datos.</li>
+					Registro SS
+					<li>Permite la colocaci&oacute;n en memoria de una pila, para almacenamiento temporal de direcci&oacute;n y datos.</li>
+					Registro ES
+					<li>Se utiliza para algunas operaciones con cadenas de caracteres se utiliza para el manejo de direccionamiento de memoria.</li>
+				</ul>
+				</li>
+				Registros de prop&oacute;sito general
+				<li>Los registros de prop&oacute;sito general son el AX, BX, CX, y DX, de 16 bits. Cada uno de ellos se divide en dos registros de 8 bits, llamados AH y AL, BH y BL, CH y CL, y, DH y DL, H significando High (alto) y L significando Low (bajo), indicando la parte alta o la parte baja del registro correspondiente de 16 bits.
+				<ul>
+					Registro AX 
+					<li>El registro AX es el registro acumulador, es utilizado para operaciones que implican entrada/salida, y multiplicaci&oacute;n y divisi&oacute;n (estas dos &uacute;ltimas en conjunto con el registro DX).</li>
+					Registro BX
+					<li>El registro BX es el registro base, y es el &uacute;nico registro de prop&oacute;sito general que puede ser un &iacute;ndice para direccionamiento indexado.</li>
+					Registro CX
+					<li>El registro CX es conocido como el registro contador. Puede contener un valor para controlar el n&uacute;mero de veces que un ciclo se repite o un valor para corrimiento de bits.</li>
+					Registro DX
+					<li>El registro DX es el registro de datos. En algunas operaciones se indica mediante este registro el n&uacute;mero de puerto de entrada/salida, y en las operaciones de multiplicaci&oacute;n y divisi&oacute;n de 16 bits se utiliza junto con el acumulador AX.</li>
+				</ul>
+				</li>
+				Registros de apuntadores
+				<li>Los registros SP (apuntador de pila) y BP (apuntador base) est&aacute;n asociados con el registro SS y permiten al sistema acceder a datos en el segmento de la pila.
+				<ul>
+					Registro SP
+					<li>El apuntador de pila de 16 bits est&aacute; asociado con el segmento SS y proporciona un valor de desplazamiento que se refiere a la palabra actual que est&aacute; siendo procesada en la pila.</li>
+					Registro BP
+					<li>El apuntador base de 16 bits facilita la referencia de par&aacute;metros dentro de la pila.</li>
+				</ul>
+				</li>
+				Registros de banderas
+				<li>Es un registro de 16 bits, de los cuales nueve sirven para indicar el estado actual de la m&aacute;quina y el resultado del procesamiento.
+				La tabla contiene 16 posiciones (de 0 a 15), que son los 16 bits del registro de banderas, numeradas de derecha a izquierda. La posici&oacute;n 0 la encontraremos a la derecha y la posici&oacute;n 15 a la izquierda.
+				Los bits de las banderas son las siguientes:
+				<ul>
+					OF (overflow, desbordamiento)
+					<li>Indica desbordamiento del bit de mayor orden despu&eacute;s de una operaci&oacute;n aritm&eacute;tica de n&uacute;meros con signo (1=existe overflow; 0=no existe overflow). Para operaciones sin signo, no se toma en cuenta esta bandera.</li>
+					DF (direcci&oacute;n)
+					<li>Controla la selecci&oacute;n de incremento o decremento de los registros SI y DI en las operaciones con cadenas de caracteres (1=decremento autom&aacute;tico; 0=incremento). La bandera DF se controla con las instrucciones STD y CLD.</li>
+					IF (interrupci&oacute;n)
+					<li>Controla el disparo de las interrupciones (1=habilita las interrupciones; 0=deshabilita las interrupciones). La interrupci&oacute;n no enmascarable es la &uacute;nica que no puede ser bloqueada por esta bandera. El estado de la bandera IF se controla con las instrucciones STI y CLI.</li>
+					TF (trampa)
+					<li>Permite la operaci&oacute;n del procesador en modo de depuraci&oacute;n (paso a paso).
+					SF (signo): Contiene el signo resultante de una operaci&oacute;n aritm&eacute;tica (0=positivo; 1=negativo).</li>
+					ZF (cero)
+					<li>Indica el resultado de una operaci&oacute;n aritm&eacute;tica o de comparaci&oacute;n (0=resultado diferente de cero; 1=resultado igual a cero).</li>
+					AF (acarreo auxiliar)
+					<li>Contiene el acarreo del bit 3. Esta bandera se prueba con las instrucciones DAA y DAS para ajustar el valor de AL despu&eacute;s de una suma o resta BCD.</li>
+					PF (paridad)
+					<li>Indica si el n&uacute;mero de bits 1, del byte menos significativos de una operaci&oacute;n, es par (0=n&uacute;mero de bits 1 es impar; 1=n&uacute;mero de bits 1 es par).</li>
+					CF (acarreo)
+					<li>Contiene el acarreo del bit de mayor orden despu&eacute;s de una operaci&oacute;n aritm&eacute;tica; tambi&eacute;n almacena el contenido del &uacute;ltimo bit en una operaci&oacute;n de desplazamiento o de rotaci&oacute;n.</li>
+				</ul>
+				</li>
+				Registro de punteros de instrucci&oacute;n
+				<li>El registro IP de 16 bits contiene el desplazamiento de direcci&oacute;n de la siguiente instrucci&oacute;n que se ejecuta. El IP est&aacute; asociado con el registro CS en el sentido de que el IP indica la instrucci&oacute;n actual dentro del segmento de c&oacute;digo que se est&aacute; ejecutando actualmente en la memoria.</li>
+			</ul>
+			<div class="atras"><a href="2.1.Oranizacion_del_procesador.html">Atrás</a></div><div class="siguiente"><a href="2.3.El_ciclo_de_instruccion.html">Siguiente</a></div>
+			<div class="abajo3">
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

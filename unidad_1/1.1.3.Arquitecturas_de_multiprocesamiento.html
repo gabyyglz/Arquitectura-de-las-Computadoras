@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.1.3.Arquitecturas de multiprocesamiento</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+		
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.1.Modelos de arquitectura de c&oacute;mputo.</h3>
+			<hr>
+			<h5>1.1.3.Arquitecturas de multiprocesamiento</h5>
+			<p>
+				Cuando se desea incrementar el desempe&ntilde;o m&aacute;s aya de lo que permite la t&eacute;cnica de segmentaci&oacute;n del cauce (limite te&oacute;rico de una instrucci&oacute;n por ciclo de reloj), se requiere utilizar m&aacute;s de un procesador para la ejecuci&oacute;n del programa de aplicaci&oacute;n.
+				Las CPU de multiprocesamiento se clasifican de la siguiente manera (Clasificaci&oacute;n de Flynn):
+				<ul>
+				<li>SISO – (Single Instruction, Single Operand)          computadoras Monoprocesador</li>
+				<li>SIMO – (Single Instruction, Multiple Operand)     procesadores vectoriales, Exenciones MMX</li>
+				<li>MISO – (Multiple Instruction, Single Operand)     No implementado</li>
+				<li>MIMO – (Multiple Instruction, Multiple Operand) sistemas SMP, Clusters, GPUs</li>
+			</ul>
+			</p>
+			
+			<br><br><br><br><br>
+				<h6>Procesadores vectoriales</h6>
+				<hr>
+			<p>
+				Son computadoras pensadas para aplicar un mismo algoritmo num&eacute;rico a una serie de datos matriciales, en especial en la simulaci&oacute;n de sistemas f&iacute;sicos complejos, tales como simuladores para predecir el clima, explosiones at&oacute;micas, reacciones qu&iacute;micas complejas, etc., donde los datos son representados como grandes n&uacute;meros de datos en forma matricial sobre los que se deben se aplicar el mismo algoritmo num&eacute;rico.
+				<hr>
+			</p>
+			<p>
+				La mayor&iacute;a de los procesadores modernos incluye algunas instrucciones de tipo vectorial, tales como las extensiones al conjunto de instrucciones tales como MMX y SSE. Estas instrucciones les permiten procesar flujos multimedia m&aacute;s eficientemente.<br>
+				Los Procesadores Digitales de Se&ntilde;ales (DSP), son procesadores especializados en el procesamiento de se&ntilde;ales tales como audio, v&iacute;deo, radar, sonar, radio, etc. Cuentan con instrucciones tipo vectorial que los hace muy aptos para dicha aplicaci&oacute;n. Suelen utilizarse en conjunto con un microcontrolador en dispositivos como reproductores de audio, reproductores de dvd y Blueray, tel&eacute;fonos celulares, sistemas de entretenimiento, sistemas de adquisici&oacute;n de datos, instrumentos m&eacute;dicos, controles industriales, etc.<br>
+				En los sistemas SMP (Simetric Multiprocesesors), varios procesadores comparten la misma memoria principal y perif&eacute;ricos de I/O, Normalmente conectados por un bus com&uacute;n. Se conocen como sim&eacute;tricos, ya que ning&uacute;n procesador toma el papel de maestro y los dem&aacute;s de esclavos, sino que todos tienen derechos similares en cuanto al acceso a la memoria y perif&eacute;ricos y ambos son administrados por el sistema operativo.<br>
+				Pueden formarse con varios n&uacute;cleos en un solo circuito integrado o con varios circuitos integrados en una misma tarjeta madre. La primera opci&oacute;n ha sido popularizada al hacerse m&aacute;s econ&oacute;micos los procesadores multinucleo de los principales fabricantes y con su uso en sistemas de gama media y baja, e inclusive en tel&eacute;fonos celulares y tabletas. La segunda opci&oacute;n fue la que se uso en un principio y sigue siendo usada en en estaciones de trabajo y en servidores de alto rendimiento debido a que incrementa el poder computacional del sistema, pero tambi&eacute;n incrementa considerablemente el costo del sistema.<br>
+			</p>
+			<div class="imagen"><img class="empequenecer" src="images/DiagramaBloquesMulti.jpg"></img></div>
+			<p>
+				Los Cl&uacute;sters son conjuntos de computadoras independientes conectadas en una red de &aacute;rea local o por un bis de interconexi&oacute;n y que trabajan cooperativamente para resolver un problema. Es clave en su funcionamiento contar con un sistema operativo y programas de aplicaci&oacute;n capaces de distribuir el trabajo entre las computadoras de la red. Este tipo de computadora paralela se ha vuelto muy popular por que permite usar los avances en los procesadores comerciales que tienen una muy buena relaci&oacute;n costo rendimiento y se puede incorporar r&aacute;pidamente los avances que proporciona las nuevas tecnolog&iacute;as en cuanto es econ&oacute;micamente viable.<br>
+				Sin embargo, se debe tener cuidado al implementar la aplicaci&oacute;n, ya que si los datos que hay que pasar de un procesador a otro son demasiados, el tiempo empleado en pasar informaci&oacute;n de un nodo a otro puede sobrepasar a la ganancia que se tiene al dividir el trabajo entre varios procesadores.<br>
+			</p>
+			<div class="imagen"><img class="empequenecer" src="images/DiagramaBloques1.jpg"></img></div>
+			<br>
+			<div class="imagen"><img class="empequenecer" src="images/DiagramaBloques2.jpg"></img></div>
+			<p>
+				Las unidades de  procesamiento gr&aacute;fico (Graphics Processing Unit GPU) – sistemas dise&ntilde;ados originalmente para el procesamiento de Gr&aacute;ficos, con m&uacute;ltiples procesadores vectoriales sencillos compartiendo la misma memoria, la cual tambi&eacute;n puede ser accedida por el CPU. Por la gran cantidad de n&uacute;cleos con los que cuenta, logran un excelente desempe&ntilde;o al ejecutar algoritmos que se adaptan a ser paralelizados, a tal grado que muchas de las supercomputadoras m&aacute;s r&aacute;pidas de la actualidad utilizan estos procesadores, y los fabricantes de tarjetas gr&aacute;ficas producen versiones de sus productos especializadas en acelerar los c&aacute;lculos de prop&oacute;sito general.
+			</p>
+			<div class="imagen"><img class="empequenecer" src="images/DiagramaBloquesProcesamiento.jpg"></img></div>
+			<div class="atras"><a href="1.1.2.ArquitecturasSegmentadas.html">Atrás</a></div><div class="siguiente"><a href="1.2.1.UnidadCentralDeProcesamiento.html">Siguiente</a></div>
+			
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

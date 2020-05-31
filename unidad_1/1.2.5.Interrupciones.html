@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.2.5.Interrupciones</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.2.An&aacute;lisis de los componentes</h3>
+			<hr>
+			<h5>1.2.5.Interrupciones</h5>
+			<hr>
+			<p>
+				Hay tres tipos de interrupciones: Reset del sistema, no enmascarables (NMI) y enmascarables.
+				Las enmascarables puedes ser habilitadas o deshabilitadas individualmente o mediante el flag e habilitaci&oacute;n general (GIE). Son generadas por perif&eacute;ricos con capacidad de interrumpir.
+				En cambio las no enmascarables s&oacute;lo puedes ser habilitadas o deshabilitadas individualmente (NMIIE, ACCVIE, OFIE). El flag de habilitaci&oacute;n general no les afecta.
+				Cuando una NMI es aceptada, todos los bits de NMI son autom&aacute;ticamente reseteados. La ejecuci&oacute;n del programa empieza en la direcci&oacute;n almacenada en el vector de NMI, 0FFFCh.
+				Una NMI puede ser generada por tres fuentes: Un flanco en el pin RST/NMI cuando est&aacute; configurado en modo NMI; un fallo en el oscilador o condiciones de error con el cristal oscilador; violaci&oacute;n acceso a la memoria flash, cuando se quiere leer o borrar la flash desde la memoria RAM mientras BUSY=1, escritura del registro de control 1 (FCTL1) mientras WAIT=0 o escritura registro de control 2 (FTL2) mientras BUSY=1.
+				Cuando una interrupci&oacute;n es requerida por un perif&eacute;rico, est&aacute; habilitada la interrupci&oacute;n y el bit GIE=1, se salta a la rutina de servicio a la interrupci&oacute;n. En el caso de NMI s&oacute;lo hace falta que est&eacute; a 1 el bit de habilitaci&oacute;n individual.
+				Aceptaci&oacute;n de una Interrupci&oacute;n el tiempo de aceptaci&oacute;n de una interrupci&oacute;n son seis ciclos de reloj, contando desde la aceptaci&oacute;n de la petici&oacute;n de interrupci&oacute;n hasta el index de la primera instrucci&oacute;n de larutina de servicio a la interrupci&oacute;n.
+				<ol>
+					<li>Finaliza instrucci&oacute;n en ejecuci&oacute;n, si la interrupci&oacute;n est&aacute; habilitada y el bit GIE=1 se acepta la interrupci&oacute;n.</li>
+					<li>Se pone en pila PC.</li>
+					<li>Se pone en pila SR.</li>
+					<li>Se selecciona la interrupci&oacute;n m&aacute;s prioritaria de las que pidan servicio.</li>
+					<li>El flag de petici&oacute;n de interrupci&oacute;n es reseteado autom&aacute;ticamente. Los dem&aacute;s flags siguen pidiendo interrupci&oacute;n.</li>
+					<li>El SR es limpiado a excepci&oacute;n del SCG0, el cual no cambia. Esto termina cualquier modo de bajo consumo.</li>
+					<li>El contenido del vector de interrupci&oacute;n es volcado en PC, el programa continua con la ejecuci&oacute;n de la rutina de servicio a la interrupci&oacute;n.</li>
+				</ol>
+				Vuelta de una Interrupci&oacute;n
+				La interrupci&oacute;n debe terminar con la instrucci&oacute;n: RETI. El retorno tarda 5 ciclos enejecutar las siguientes acciones:
+				<ol>
+					<li>SR es retornado de pila</li>
+					<li>PC es tomado de pila y empieza la ejecuci&oacute;n en la siguiente instrucci&oacute;n donde fue interrumpido.</li>
+				</ol>
+				Anidamiento de Interrupciones
+				El anidamiento de una interrupci&oacute;n es habilitado si se aserta el bit GIE=1 dentro de la rutina de servicio a la interrupci&oacute;n, ya que GIE ha sido puesto a 0 al resetear SR.
+			</p>
+			<div class="atras"><a href="1.2.4.Buses.html">Atrás</a> <div class="abajos2">
+				<p>Dise&ntilde;ado por:</p>
+				Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+		</div>
+	</body>
+</html>

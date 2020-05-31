@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.2.1.Unidad Central de Procesamiento</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+				<div class="Header2">
+				<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+				<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+				
+				<ul>
+					<li class="principal"><a>
+						Unidad II</a>
+						<ul>
+						  <li><a class="subtema">
+							Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+							<ul>
+								<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+									Organizaci&oacute;n del procesador</a>
+								</li>
+								<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+									Estructura de registros</a>
+								</li>
+								<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+									El ciclo de la instrucci&oacute;n</a>
+								</li>
+							</ul>
+						  </li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul>
+					<li class="principal"><a>
+						Unidad III</a>
+						<ul>
+							<li><a class="subtema">
+								Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+								<ul>
+									<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+									<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+									<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul>
+					<li class="principal"><a>
+						Unidad IV</a>
+						<ul>
+							<li><a class="subtema">
+								Procesamiento paralelo</a>
+								<ul>
+									<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+										Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+									</li>
+									<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+										Tipos de computaci&oacute;n paralela</a>
+									</li>
+									<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+										Sistema de memoria; multiprocesamiento</a>
+									</li>
+									<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+										Sistemas de memoria distribuida; multicomputadoras</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				</div>
+			</div>
+			
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.2.An&aacute;lisis de los componentes</h3>
+			<hr>
+			<h5>1.2.1.Unidad Central de Procesamiento (CPU)</h5>
+			<hr>
+			<h6 id="arquitecturas">1.2.1.1.Arquitecturas</h6>
+			<p>
+				Adem&aacute;s de las Arquitecturas cl&aacute;sicas  mencionadas anteriormente, en la actualidad han aparecido Arquitecturas h&iacute;bridas entre la Von Newman y la Harvard, buscando conservar la flexibilidad, pero mejorando el rendimiento.
+				Esta escuela pretende aplicar un enfoque totalmente distinto al tradicional hasta entonces, que pas&oacute; a conocerse como computadoras de conjunto complejo de instrucciones (CISC) para diferenciarla de la nueva tendencia.
+				Se implementan instrucciones especiales que realizan funciones complejas, de manera que un programador puede encontrar con seguridad, una instrucci&oacute;n especial que realiza en hardware la funci&oacute;n que el necesita.
+				CISC vs RISC
+			</p>
+			<h6 id="tipos">1.2.1.2.Tipos</h6>
+			<p>
+				Los CPUs modernos pueden clasificarse de acuerdo a varias caracter&iacute;sticas, tales como: el tama&ntilde;o del ALU o del Bus de conexi&oacute;n al exterior (8, 16, 32, 64 bits), si tienen cauce pipeline, si son tipo CISC o RISC, Von Newmann o Harvard y si solo tienen instrucciones enteras o implementan tambi&eacute;n instrucciones de punto flotante.
+			</p>
+			<p style="font-weight:bold">
+				Clasificaci&oacute;n de procesadores intel
+			</p>
+			<div class="imagen"><img src="images/intel_star_l.png"></img></div>
+			<h6 id="caract">1.2.1.3.Caracter&iacute;sticas.</h6>
+			<p>
+				Las caracter&iacute;sticas m&aacute;s importantes a considerar al escoger un CPU para usarlo (idealmente) en una aplicaci&oacute;n, son:
+				Modelo del programador (Conjunto de registros que el programador puede utilizar), forman el modelo mental del CPU que el programador utiliza al programar en ensamblador.
+				Conjunto de instrucciones que puede ejecutar el CPU
+				Modos de direccionamiento que pueden usarse para obtener los operandos de las instrucciones.
+				Ciclo de instrucci&oacute;n (el conjunto de pasos que realiza el CPU para procesar cada instrucci&oacute;n)
+				Buses de interconexi&oacute;n, usados para que el CPU lea y escriba a la memoria y a los dispositivos de entrada y salida.
+			</p>
+			<p>Caracter&iacute;sticas de los CPU<br></p>
+			<span><ul>
+				Acciones Directas
+				<li>Integrar un nuevo sistema de c&oacute;mputo.</li>
+				<li>Reemplazar un cpu da&ntilde;ado.</li>
+				<li>Actualizar un sistema de c&oacute;mputo.</li>
+			</ul></span>
+			<ul>
+				Acciones indirectas
+				<li>Comprar equipos de c&oacute;mputo nuevo.</li>
+				<li>Construir un equipo de control (microcontrolador).</li>
+			</ul>
+			<br><br><br><br><br>
+			<h6 id="funcionamiento">1.2.1.4.Funcionamiento; ALU, Unidad de Control, Registros y buses internos.</h6>
+			<p>
+				Todos los CPU tienen como funci&oacute;n principal la ejecuci&oacute;n de un programa acorde a la aplicaci&oacute;n del mismo.
+			</p>
+			<ul class="deff">
+				<li>Un programa es un conjunto de instrucciones almacenadas de acuerdo al orden en que deben ejecutarse.</li>
+				<li>Por lo tanto, toda computadora debe ser capaz de procesar las instrucciones de su programa en un ciclo de instrucci&oacute;n, consistente en un n&uacute;mero de etapas que var&iacute;a con cada
+				CPU, pero que tradicionalmente han sido tres (trabajando en un cpu ideal):</li>
+				<li><ol type="I">
+					<li>B&uacute;squeda del c&oacute;digo de Instrucci&oacute;n.</li>
+					<p>Esta consiste en leer de la memoria cual ser&aacute; la siguiente instrucci&oacute;n a ejecutar, la cual esta almacenada en forma de un c&oacute;digo num&eacute;rico que indica cual de todas las operaciones que puede realizar el CPU ser&aacute; la siguiente y con que operandos se ejecutar&aacute;.</p>
+					<li>Decodificaci&oacute;n.</li>
+					<p>Consiste en tomar el c&oacute;digo num&eacute;rico e identificar a cu&aacute;l de las operaciones que puede realizar el CPU corresponde dicho c&oacute;digo.</p>
+					<li> Ejecuci&oacute;n.</li>
+					<p>En esta etapa se lleva a cabo la operaci&oacute;n sobre los datos que se vayan a procesar.
+					En general, la unidad de control (UC) genera las se&ntilde;ales de control necesarias para llevar los datos a las entradas de la Unidad Aritm&eacute;tica L&oacute;gica, la cual efectuar&aacute; las operaciones aritm&eacute;ticas y l&oacute;gicas.</p>
+				</ol></li>
+			</ul>
+			<div class="atras"><a href="1.1.3.Arquitecturas_de_multiprocesamiento.html">Atrás</a></div><div class="siguiente"><a href="1.2.2.Memoria.html">Siguiente</a></div>
+			<div class="abajo2" >
+				<p>Dise&ntilde;ado por:</p>
+				Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+					
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

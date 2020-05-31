@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.1.1.Arquitecturas Cl&aacute;sicas.</title>
+		<link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.1.Modelos de arquitectura de c&oacute;mputo.</h3>
+			<hr>
+			<h5>1.1.1.Arquitecturas Cl&aacute;sicas.</h5>
+			<p>
+				Estas arquitecturas se desarrollaron en las primeras computadoras electromec&aacute;nicas y de tubos de vac&iacute;o. Aun son usadas en procesadores empotrados de gama baja y son la base de la mayor&iacute;a de las arquitecturas modernas.
+			</p>
+			<h5>Arquitectura Mauchly-Eckert (Von Newman)</h5>
+			<p>
+				Esta arquitectura fue utilizada en la computadora ENIAC. Consiste en una unidad central de proceso que se comunica a trav&eacute;s de un solo bus con un banco de memoria en donde se almacenan tanto los c&oacute;digos de instrucci&oacute;n del programa, como los datos que ser&aacute;n procesados por este.
+				Esta arquitectura es la m&aacute;s empleada en la actualidad ya, que es muy vers&aacute;til. Ejemplo de esta versatilidad es el funcionamiento de los compiladores, los cuales son programas que toman como entrada un archivo de texto conteniendo c&oacute;digo fuente y generan como datos de salida, el c&oacute;digo m&aacute;quina que corresponde a dicho c&oacute;digo fuente (Son programas que crean o modifican otros programas). Estos datos de salida pueden ejecutarse como un programa posteriormente ya que se usa la misma memoria para datos y para el c&oacute;digo del programa.
+			</p>
+			<div class="imagen"><img src="images/Arquitectura_Von_Newman.jpg"><img></div>
+			<p>
+				La principal desventaja de esta arquitectura, es que el bus de datos y direcciones  &uacute;nico se convierte en un cuello de botella por el cual debe pasar toda la informaci&oacute;n que se lee de o se escribe a la memoria, obligando a que todos los accesos a esta sean secuenciales. Esto limita el grado de paralelismo (acciones que se pueden realizar al mismo tiempo) y por lo tanto, el desempe&ntilde;o de la computadora. Este efecto se conoce como el cuello de botella de Von Newman.
+				En esta arquitectura apareci&oacute; por primera vez el concepto de programa almacenado. Anteriormente la secuencia de las operaciones  era dictada por el alambrado de la unidad de control, y cambiarla implicaba un proceso de recableado laborioso, lento (hasta tres semanas) y propenso a errores. En esta arquitectura se asigna un c&oacute;digo num&eacute;rico a cada instrucci&oacute;n. Dichos c&oacute;digos se almacenan en la misma unidad de memoria que los datos que van a procesarse, para ser ejecutados en el orden en que se encuentran almacenados en memoria. Esto permite cambiar r&aacute;pidamente la aplicaci&oacute;n de la computadora y dio origen a las computadoras de prop&oacute;sito general.
+				Mas a detalle, el procesador se subdivide en una unidad de control (C.U.), una unidad l&oacute;gica aritm&eacute;tica (A.L.U.) y una serie de registros. Los registros sirven para almacenar internamente datos y estado del procesador. La unidad aritm&eacute;tica l&oacute;gica proporciona la capacidad de realizar operaciones aritm&eacute;ticas y l&oacute;gicas. La unidad de control genera las se&ntilde;ales de control para leer el c&oacute;digo de las instrucciones, decodificarlas y hacer que la ALU las ejecute.
+			</p>
+			<h5>Arquitectura Hardvard</h5>
+			<p>
+				Esta arquitectura surgi&oacute; en la universidad del mismo nombre, poco despu&eacute;s de que la arquitectura Von Newman apareciera en la universidad de Princeton. Al igual que en la  arquitectura Von Newman, el programa se almacena como un c&oacute;digo num&eacute;rico en la memoria, pero no en el mismo espacio de memoria ni en el mismo formato que los datos. Por ejemplo, se pueden almacenar las instrucciones en doce bits en la memoria de programa, mientras los datos de almacenan en ocho bits en una memoria aparte.
+			</p>
+			<div class="imagen"><img src="images/Arquitectura_Hardvard.jpg"><img></div>
+			<p>
+				El hecho de tener un bus separado para el programa y otro para los datos permite que se lea el c&oacute;digo de operaci&oacute;n de una instrucci&oacute;n, al mismo tiempo se lee de la memoria de datos los operados de la instrucci&oacute;n previa. As&iacute; se evita el problema del cuello de botella de Von Newman y se obtiene un mejor desempe&ntilde;o.
+				En la actualidad la mayor&iacute;a de los procesadores modernos se conectan al exterior de manera similar a a la arquitectura Von Newman, con un banco de memoria masivo &uacute;nico, pero internamente incluyen varios niveles de memoria cache con bancos separados en cache de programa y cache de datos, buscando un mejor desempe&ntilde;o sin perder la versatilidad.
+			</p>
+			<div class="siguiente"><a href="1.1.2.ArquitecturasSegmentadas.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>4.4.Sistemas de memoria distribuida</title><title>3.3.Ambientes de servicio</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad IV</h1>
+			<hr>
+			<h3>4.Procesamiento paralelo.</h3>
+			<hr>
+			<h5>4.4.Sistemas de memoria distribuida; multicomputadoras clusters</h5>
+			<p>
+				Los sistemas de memoria distribuida o multicomputadores pueden ser de dos tipos b&aacute;sicos. El primer de ellos consta de un &uacute;nico computador con m&uacute;ltiples CPUs comunicadas por un bus de datos mientras que en el segundo se utilizan m&uacute;ltiples computadores, cada uno con su propio procesador, enlazados por una red de interconexi&oacute;n m&aacute;s o menos r&aacute;pida.
+				Sobre los sistemas de multicomputadores de memoria distribuida, se simula memorias compartidas. Se usan los mecanismos de comunicaci&oacute;n y sincronizaci&oacute;n de sistemas multiprocesadores.
+				Un cl&uacute;ster es un tipo de arquitectura paralela distribuida que consiste de un conjunto de computadores independientes interconectados operando de forma conjunta como &uacute;nico recurso computacional sin embargo, cada computador puede utilizarse de forma independiente o separada.
+				En esta arquitectura, el computador paralelo es esencialmente una colecci&oacute;n de procesadores secuenciales, cada uno con su propia memoria local, que pueden trabajar conjuntamente.
+			</p>
+			<ul class="deff">
+				<li>Cada nodo tiene r&aacute;pido acceso a su propia memoria y acceso a la memoria de otros nodos mediante una red de comunicaciones, habitualmente una red de comunicaciones de alta velocidad.</li>
+				<li>Los datos son intercambiados entre los nodos como mensajes a trav&eacute;s de la red.</li>
+				<li>Una red de ordenadores, especialmente si disponen de una interconexi&oacute;n de alta velocidad, puede ser vista como un multicomputador de memoria distribuida y como tal ser utilizada para resolver problemas mediante computaci&oacute;n paralela.</li>
+			</ul>
+			<h5>4.4.1.Redes de interconexi&oacute;n est&aacute;tica</h5>
+			<p>
+				Las redes est&aacute;ticas emplean enlaces directos fijos entre los nodos. Estos enlaces, una vez fabricado el sistema son dif&iacute;ciles de cambiar, por lo que la escalabilidad de estas topolog&iacute;as es baja. Las redes est&aacute;ticas pueden utilizarse con eficiencia en los sistemas en que pueden predecirse el tipo de tr&aacute;fico de comunicaciones entre sus procesadores.
+			</p>
+			<ul class="deff">
+				<li>Formaci&oacute;n lineal: Se trata de una red unidimensional en que los nodos se conectan cada uno con el siguiente medianteN-1 enlaces formando una l&iacute;nea.</li>
+				<li>Mallas y toros: Esta red de interconexi&oacute;n es muy utilizada en la pr&aacute;ctica. Las redes en toro son mallas en que sus filas y columnas tienen conexiones en anillo, esto contribuye a disminuir su di&aacute;metro. Esta peque&ntilde;a modificaci&oacute;n permite convertir a las mallas en estructuras sim&eacute;tricas y adem&aacute;s reduce su di&aacute;metro a la mitad.</li>
+			</ul>
+			<h5>4.4.2.Cl&uacute;ster</h5>
+			<p>
+				Un cl&uacute;ster es un grupo de ordenadores d&eacute;bilmente acoplados que trabajan en estrecha colaboraci&oacute;n, de modo que en algunos aspectos pueden considerarse como un solo equipo. Los cl&uacute;steres se componen de varias m&aacute;quinas independientes conectadas por una red. Mientras que las m&aacute;quinas de un cl&uacute;ster no tienen que ser sim&eacute;tricas, de no serlo, el balance de carga es m&aacute;s dif&iacute;cil de lograr. 
+				El tipo m&aacute;s com&uacute;n de cl&uacute;ster es el cluster Beowulf, que es un cl&uacute;ster implementado con m&uacute;ltiples ordenadores comerciales id&eacute;nticos conectados a una red de &aacute;rea local TCP/IPEthernet. La tecnolog&iacute;a Beowulf fue desarrollada originalmente por Thomas Sterling y Donald Becker. La gran mayor&iacute;a de los superordenadores TOP500 son cl&uacute;steres. Se aplica a los conjuntos o conglomerados de computadoras construidos mediante la utilizaci&oacute;n de hardwares comunes y que se compartan como si fuesen una &uacute;nica computadora.
+				Los cl&uacute;ster son usualmente empleados para mejorar el rendimiento y la disponibilidad por encima de la que es provista por un solo computador t&iacute;picamente siendo m&aacute;s econ&oacute;mico que computadores individuales de rapidez y disponibilidad comparables.De un cl&uacute;ster se espera que presente combinaciones de los siguientes servicios:
+			</p>
+			<ul class="deff">
+				<li>Alto rendimiento</li>
+				<li>Alta disponibilidad</li>
+				<li>Balance de carga</li>
+				<li>Escalabilidad</li>
+			</ul><br><br><br><br><br>
+			<p>
+				La construcci&oacute;n de los ordenadores del cl&uacute;ster es m&aacute;s f&aacute;cil y econ&oacute;mica debido a su flexibilidad: pueden tener toda la misma configuraci&oacute;n de hardware y sistema operativo diferente rendimiento pero con arquitectura y sistemas operativos similares o tener diferente hardware y sistema operativo lo que hace m&aacute;s f&aacute;cil y econ&oacute;mica su construcci&oacute;n. Para que un cl&uacute;ster funcione como tal no basta solo con conectar entre si los ordenadores, sino que es necesario proveer un sistema de manejo del cl&uacute;ster, el cual se encargue de interactuar con el usuario y los procesos que ocurren en &eacute;l para optimizar el funcionamiento.
+				La tecnolog&iacute;a cl&uacute;ster permite a las organizaciones incrementar su capacidad de procesamiento usando tecnolog&iacute;a est&aacute;ndar tanto en componentes de hardware como de software que pueden adquirirse a un costo relativamente bajo.
+			</p>
+			<h5>4.4.3.Programaci&oacute;n de cl&uacute;ster</h5>
+			<p>
+				Estos cl&uacute;ster est&aacute;n dise&ntilde;ados y optimizados para correr programas paralelos. En este caso, los programas tienen que ser hechos espec&iacute;ficamente para funcionar en forma paralela. T&iacute;picamente estos programas son modelos que requieren realizar gran cantidad de c&aacute;lculos num&eacute;ricos. La ventaja de programarlos de esta manera y correrlos en un cl&uacute;ster es que se reduce dr&aacute;sticamente los tiempos de proceso. En el caso de modelos meteorol&oacute;gicos usados para predecir el tiempo es obvia la necesidad de correrlos en tiempo m&iacute;nimo. Cuando se programa un modelo en una plataforma multiprocesadores es necesario usar esquemas de programaci&oacute;n paralela. Las bibliotecas son las que permiten paralelizacion de tareas. En el caso de los cl&uacute;ster SCALI, portar programas hechos con bibliotecas MPI es directo gracias al uso de biblioteca SCAMPI
+			</p>
+			<h5>4.4.4.Consideraciones sobre el rendimiento de los cl&uacute;sters</h5>
+			<p>
+				Para dise&ntilde;ar, implementar, probar y mantener un cl&uacute;ster se requiere un entendimiento b&aacute;sico pero claro de hardware de computadoras, de redes de computadoras y de sistemas operativos y la habilidad para investigar algunos t&oacute;picos especializados, como dispositivos de interconexi&oacute;n de Alta velocidad, tal vez reintroducirse a lenguajes de programaci&oacute;n como FORTRAN y librer&iacute;as para el desarrollo de aplicaciones como MPI.
+				Una vez escogido un sistema operativo, d&iacute;gase Linux, se requiere algo de experiencia en la administraci&oacute;n de sistemas Linux y en la forma de realizar conexiones de red. De manera l&oacute;gica, cada nodo delx cl&uacute;ster tiene una parte de hardware y otra de software. El hardware est&aacute; compuesto por procesadores, memoria, interfaz de red y discos duros entre otros.
+			</p>
+			<div class="atras"><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">Atrás</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+				
+		</div>
+	</body>
+</html>

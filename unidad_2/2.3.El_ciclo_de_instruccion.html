@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2.3.El ciclo de instrucci&oacute;n</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad II</h1>
+			<hr>
+			<h3>2.3.El ciclo de instrucci&oacute;n</h3>
+			<hr>
+			<p>Un ciclo de instrucci&oacute;n incluye los siguientes subciclos:</p>
+			<ul>
+				<li>Captaci&oacute;n: llevar la siguiente instrucci&oacute;n de la memoria al procesador.</li>
+				<li>Ejecuci&oacute;n: interpretar el c&oacute;digo de operaci&oacute;n y llevar a cabo la operaci&oacute;n indicada.</li>
+				<li>Interrupci&oacute;n: si las interrupciones est&aacute;n habilitadas y ha ocurrido una interrupci&oacute;n, guardar el estado del proceso actual y atender la interrupci&oacute;n.</li>
+			</ul>
+			<h5>El ciclo indirecto</h5>
+			<p>
+				La ejecuci&oacute;n de una instrucci&oacute;n puede involucrar a uno o m&aacute;s operandos en memoria, cada uno de los cuales requiere un acceso a memoria. Adem&aacute;s, si se usa direccionamiento indirecto ser&aacute;n necesarios accesos a memoria adicionales.
+				Podemos considerar la captaci&oacute;n de direcciones indirectas como un subciclo de instrucci&oacute;n m&aacute;s. El resultado se muestra en la Figura 12.4. La principal l&iacute;nea de actividad consiste en alternar las  actividades de captaci&oacute;n y ejecuci&oacute;n de instrucciones. Despu&eacute;s de que una instrucci&oacute;n sea captada, es examinada para determinar si incluye alg&uacute;n direccionamiento indirecto. Si es as&iacute;, los operandos requeridos se captan usando direccionamiento indirecto. Tras la ejecuci&oacute;n se puede procesar una interrupci&oacute;n antes de la captaci&oacute;n de la siguiente instrucci&oacute;n.
+			</p>
+			<div class="imagen"><img src="images/Figura12_4.jpg"></img></div>
+			<p>
+				En la Figura 12.5, que es una versi&oacute;n revisada de la Figura 3.12, se muestra otra forma de ver este proceso. Esta nueva figura ilustra m&aacute;s correctamente la naturaleza del ciclo de instrucci&oacute;n. Una vez que una instrucci&oacute;n es captada, deben identificarse sus campos de operandos. Se capta entonces de la memoria cada operando de entrada, y este proceso puede requerir direccionamiento indirecto. Los operandos ubicados en registros no necesitan ser captados. Una vez que se ejecuta la operaci&oacute;n, puede ser necesario un proceso similar para almacenar el resultado en la memoria principal.
+			</p>
+			<h5>2.3.1.Ciclo Fetch-Decode-Execute</h5>
+			<p>
+				Procedimiento bien establecido
+				Fases(o sub ciclos): b&uacute;squeda  y ejecuci&oacute;n (cada fase tiene etapas o actividades)
+			</p>
+			<ul>
+				FASE FETCH
+				<li>Cargar la siguiente instrucci&oacute;n.</li>
+				<li>Incrementar el secuenciador</li>
+				<li>Interpretar la instrucci&oacute;n</li>
+				FASE EXECUTE
+				<li>Cargar los operandos</li>
+				<li>Ejecutar la operaci&oacute;n</li>
+				<li>Guardar el resultado</li>
+				<li>Verificar si hay solicitudes de interrupci&oacute;n.</li>
+			</ul><br><br><br><br><br><br><br><br><br><br><br>
+			<h5>2.3.2.Elementos para construir el CPU</h5>
+			<ul>
+				Completo
+				<li>Que se pueda realizar en un tiempo finito cualquier tarea ejecutable con un ordenador (computable o decidible).</li>
+				Eficiente
+				<li>Que permita alta velocidad de c&aacute;lculo sin exigir una elevada complejidad en su UC y ALU y sin consumir excesivos recursos (memoria), es decir, debe cumplir su tarea en un tiempo razonable minimizando el uso de los recursos.</li>
+				Autocontenidas
+				<li>Esto es, que contengan en s&iacute; mismas toda la informaci&oacute;n necesaria para ejecutarse.</li>
+				Independientes
+				<li>Que no dependan de la ejecuci&oacute;n de alguna otra instrucci&oacute;n.</li>
+				Se puede comprobar que para que un conjunto de instrucciones sea completo solo se necesitan cuatro instrucciones:
+				<li>Escritura</li>
+				<li>Mover a la izquierda una posici&oacute;n y leer.</li>
+				<li>Mover a la derecha una posici&oacute;n y leer.</li>
+				<li>Parar.</li>
+			</ul>
+			<p>
+				En esta idea se basan las arquitecturas RISC, no obstante, con este conjunto no se puede conseguir la eficiencia del repertorio de instrucciones por lo que en la pr&aacute;ctica el conjunto suele ser m&aacute;s amplio en aras de conseguir un mejor rendimiento, tanto en uso de recursos como en consumo de tiempo.
+			</p>
+			<h5>2.3.3.Modos de Direccionamiento</h5>
+			<p>
+				Contar con diferentes formatos de instrucciones, implica contar con diferentes formas de obtener los operandos de las instrucciones. Por lo general a estas m&uacute;ltiples formas se les conoce como modos de direccionamiento. Los modos de direccionamiento en MIPS son:
+				Direccionamiento por registro, donde los operandos son registros. Los datos a operar est&aacute;n contenidos en 2 registros de 32 bits y el resultado ser&aacute; colocado en otro registro, del mismo tama&ntilde;o.
+				Ejemplos de instrucciones que usan este modo de direccionamiento: add, sub, slt, etc.
+			</p>
+			<div class="imagen"><img src="images/direccionamiento.jpg"></img></div>
+			<p>
+				Direccionamiento base o desplazamiento, donde uno de los operandos est&aacute; en una localidad de memoria cuya direcci&oacute;n es la suma de un registro y una constante que forma parte de la misma instrucci&oacute;n.
+				Ejemplos de instrucciones que usan este modo de direccionamiento: lw, sw, etc.
+			</p>
+			<div class="imagen"><img src="images/direccionamiento2.jpg"></img></div>
+			<p>
+				Direccionamiento inmediato, donde uno de los operandos es una constante que est&aacute; en la misma instrucci&oacute;n.
+				Ejemplos de instrucciones que usan este modo de direccionamiento: addi, slti, etc.
+			</p>
+			<div class="imagen"><img src="images/direccionamiento3.jpg"></img></div>
+			<p>
+				Direccionamiento pseudo directo, donde la direcci&oacute;n destino de un salto corresponde a la concatenaci&oacute;n de 26 bits que est&aacute;n en la misma instrucci&oacute;n con los bits m&aacute;s significativos del PC.
+				Ejemplos de instrucciones que usan este modo de direccionamiento: j y jal.
+			</p>
+			<div class="imagen"><img src="images/direccionamiento4.jpg"></img></div>
+			<p>
+				Es importante mencionar que estamos estudiando una arquitectura con direcciones de 32 bits, sin embargo, MIPS, como muchas otras arquitecturas, tiene una extensi&oacute;n que maneja direcciones de 64 bits. Esto como una respuesta a la necesidad de manejar programas cada vez m&aacute;s grandes.
+			</p>
+			<div class="atras"><a href="2.2.Estructura_de_registros.html">Atrás</a></div>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<hr></hr>
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

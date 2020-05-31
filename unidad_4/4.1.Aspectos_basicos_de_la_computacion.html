@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>4.1.Aspectos b&aacute;sicos de la computaci&oacute;n paralela.</title><title>3.3.Ambientes de servicio</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad IV</h1>
+			<hr>
+			<h3>4.Procesamiento paralelo.</h3>
+			<hr>
+			<h5>4.1.Aspectos b&aacute;sicos de la computaci&oacute;n paralela.</h5>
+			<p>
+				Computador paralelo: Conjunto de elementos de procesos independientes que operan de una forma conjunta para resolver problemas de elevado coste computacional.
+			</p>
+			<ul>
+				&aacute;mbito de aplicaci&oacute;n:
+				<li>Desde la conexi&oacute;n de procesadores.</li>
+				<li>Hasta la conexi&oacute;n de computadores.</li>
+			</ul><br><br><br><br>
+			<p>
+				La computaci&oacute;n paralela es una forma de c&oacute;mputo en la que muchas instrucciones se ejecutan simult&aacute;neamente, operando sobre el principio de que problemas grandes, a menudo se pueden dividir en unos m&aacute;s peque&ntilde;os, que luego son resueltos simult&aacute;neamente (en paralelo). 
+				Hay varias formas diferentes de computaci&oacute;n paralela: paralelismo a nivel de bit, paralelismo a nivel de instrucci&oacute;n, paralelismo de datos y paralelismo de tareas. El paralelismo se ha empleado durante muchos a&ntilde;os, sobre todo en la computaci&oacute;n de altas prestaciones, pero el inter&eacute;s en ella ha crecido &uacute;ltimamente debido a las limitaciones f&iacute;sicas que impiden el aumento de la frecuencia. Como el consumo de energ&iacute;a —y por consiguiente la generaci&oacute;n de calor— de las computadoras constituye una preocupaci&oacute;n en los &uacute;ltimos a&ntilde;os, la computaci&oacute;n en paralelo se ha convertido en el paradigma dominante en la arquitectura de computadores, principalmente en forma de procesadores multin&uacute;cleo.
+			</p>
+			<div><img scr="images/ethernet.jpg"></img></div>
+			<p>
+				Las computadoras paralelas pueden clasificarse seg&uacute;n el nivel de paralelismo que admite su hardware: equipos con procesadores multin&uacute;cleo y multi-procesador que tienen m&uacute;ltiples elementos de procesamiento dentro de una sola m&aacute;quina y los cl&uacute;steres, MPPS y grids que utilizan varios equipos para trabajar en la misma tarea. Muchas veces, para acelerar la tareas espec&iacute;ficas, se utilizan arquitecturas especializadas de computaci&oacute;n en paralelo junto a procesadores tradicionales.
+				Los programas inform&aacute;ticos paralelos son m&aacute;s dif&iacute;ciles de escribir que los secuenciales, porque la concurrencia introduce nuevos tipos de errores de software, siendo las condiciones de carrera los m&aacute;s comunes. La comunicaci&oacute;n y sincronizaci&oacute;n entre diferentes subtareas son algunos de los mayores obst&aacute;culos para obtener un buen rendimiento del programa paralelo.
+				La m&aacute;xima aceleraci&oacute;n posible de un programa como resultado de la paralelizaci&oacute;n se conoce como la ley de Amdahl.
+			</p>
+			<div class="siguiente"><a href="4.2.Tipos_de_computación_paralela.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>4.3.Sistema de memoria compartida</title><title>3.3.Ambientes de servicio</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad IV</h1>
+			<hr>
+			<h3>4.Procesamiento paralelo.</h3>
+			<hr>
+			<h5>4.3.Sistema de memoria compartida; multiprocesamiento.</h5>
+			<p>
+				Un multiprocesador puede verse como un computador paralelo compuesto por varios procesadores interconectados que comparten un mismo sistema de memoria.
+				Los sistemas multiprocesadores son arquitecturas MIMD con memoria compartida. Tienen un &uacute;nico espacio de direcciones para todos los procesadores y los mecanismos de comunicaci&oacute;n se basan en el paso de mensajes desde el punto de vista del programador.
+				Dado que los multiprocesadores comparten diferentes m&oacute;dulos de memoria, pudiendo acceder a un mismo m&oacute;dulo varios procesadores, a los multiprocesadores tambi&eacute;n se les llama sistemas de memoria compartida.
+			</p>
+			<div class="imagen"><img src="images/SistemasMultiprocesamiento.jpg"></img></div>
+			<p>
+				Dependiendo de la forma en que los procesadores comparten la memoria, se clasifican en sistemas multiprocesador UMA, NUMA y COMA.
+				Multiproceso es tradicionalmente conocido como el uso de m&uacute;ltiples procesos concurrentes en un sistema en lugar de un &uacute;nico proceso en un instante determinado. Como la multitarea que permite a m&uacute;ltiples procesos compartir una &uacute;nica CPU, m&uacute;ltiples CPUs pueden ser utilizados para ejecutar m&uacute;ltiples hilos dentro de un &uacute;nico proceso.
+				El multiproceso para tareas generales es, a menudo, bastante dif&iacute;cil de conseguir debido a que puede haber varios programas manejando datos internos (conocido como estado o contexto) a la vez.
+			</p>
+			<div class="imagen"><img src="images/definicionEntreSistemas.jpg"></img></div>
+			<p>
+				Los programas t&iacute;picamente se escriben asumiendo que sus datos son incorruptibles. Sin embargo, si otra copia del programa se ejecuta en otro procesador, las dos copias pueden interferir entre s&iacute; intentando ambas leer o escribir su estado al mismo tiempo. 
+				Para evitar este problema se usa una variedad de t&eacute;cnicas de programaci&oacute;n incluyendo sem&aacute;foros y otras comprobaciones y bloqueos que permiten a una sola copia del programa cambiar de forma exclusiva ciertos valores.
+			</p>
+			<div class="imagen"><img src="images/EstacionServidor.jpg"></img></div>
+			<h6>Multiterea</h6>
+			<p>
+				Permite a m&uacute;ltiples procesos compartir una &uacute;nica CPU, m&uacute;ltiples CPUs pueden ser utilizados para ejecutar m&uacute;ltiples hilos dentro de un &uacute;nico proceso.
+			</p>
+			<h5>4.3.1.Redes de Interconexi&oacute;n Din&aacute;micas o Indirectas</h5>
+			<p>
+				Uno de los criterios m&aacute;s importantes para la clasificaci&oacute;n de las redes es el que tiene en cuenta la situaci&oacute;n de la red en la m&aacute;quina paralela, dando lugar a dos familias de redes: redes est&aacute;ticas y redes din&aacute;micas. Una red est&aacute;tica es una red cuya topolog&iacute;a queda definida de manera definitiva y estable durante la construcci&oacute;n de la m&aacute;quina paralela.
+				La red simplemente une los diversos elementos de acuerdo a una configuraci&oacute;n dada. Se utiliza sobre todo en el caso de los multicomputadores para conectar los diversos procesadores que posee la m&aacute;quina. Por la red s&oacute;lo circulan los mensajes entre procesadores, por lo que se dice que la red presenta un acoplamiento d&eacute;bil. En general, en las redes est&aacute;ticas se exige poca carga a la red.
+				Una red din&aacute;mica es una red cuya topolog&iacute;a puede variar durante el curso de la ejecuci&oacute;n de un programa paralelo o entre dos ejecuciones de programas. La red est&aacute; constituida por elementos materiales espec&iacute;ficos, llamados commutadores o switches.
+				Las redes din&aacute;micas se utilizan sobre todo en los multiprocesadores. En este caso, la red une los procesadores a los bancos de memoria central. Cualquier acceso de un procesador a la memoria (bien sea para acceder a los datos o a las instrucciones) debe pasar a trav&eacute;s de la red, por lo se dice que la red tiene un acoplamiento fuerte. La red debe poseer un rendimiento extremadamente bueno para no demorar demasiado a los procesadores que acceden a memoria.
+			</p>
+			<h5>4.3.1.1.Redes de medio compartido</h5>
+			<p>
+				En el ejemplo del subapartado anterior s&oacute;lo hab&iacute;a un emisor y un receptor unidos por una fibra &oacute;ptica. En el mundo de las comunicaciones, y de las redes de computadores en particular, el medio que se utiliza para comunicarse suele estar compartido. Con una serie de ejemplos iremos viendo diferentes maneras de compartir el medio.
+				En el caso de la televisi&oacute;n o la radio, existen diferentes canales y emisoras que est&aacute;n compartiendo el medio. A fin de que no haya problemas, hay una regulaci&oacute;n del espectro radioel&eacute;ctrico: se tiene cuidado de que cada uno de los canales tenga asignada una frecuencia determinada y que no haya m&aacute;s de un canal usando la misma frecuencia. Este sistema se llama multiplexaci&oacute;n por divisi&oacute;n de frecuencia y no s&oacute;lo se utiliza en la radio y la televisi&oacute;n.
+				Por ejemplo, los sistemas de l&iacute;nea de abonado digital asim&eacute;trica (ADSL) utilizan este sistema para conectar la red de computadores de casa a Internet. Como se puede ver en la figura siguiente, por el cable telef&oacute;nico circulan tres tipos de informaci&oacute;n, cada uno por su frecuencia asignada: la voz de las llamadas telef&oacute;nicas, la informaci&oacute;n digital que viene de Internet (bajada) y la informaci&oacute;n digital que nosotros enviamos a Internet (subida).
+				Si lo que se est&aacute; compartiendo es una fibra &oacute;ptica, se tiende a realizar una multiplexaci&oacute;n por divisi&oacute;n del tiempo. Supongamos que una misma fibra est&aacute; siendo utilizada por cuatro comunicaciones. En ese caso, la fibra estar&aacute; disponible durante un instante determinado de tiempo para la comunicaci&oacute;n n&uacute;mero 1; el siguiente instante de tiempo lo estar&aacute; para la comunicaci&oacute;n 2 y as&iacute; sucesivamente. Una vez haya acabado la comunicaci&oacute;n n&uacute;mero 4, la fibra volver&aacute; a estar disponible para la comunicaci&oacute;n 1.
+				Otro m&eacute;todo de compartici&oacute;n del acceso en el medio se basa en la distribuci&oacute;n de &eacute;ste por parte de un dispositivo maestro. Por ejemplo, en la tecnolog&iacute;a Bluetooth, los dispositivos pr&oacute;ximos forman una red llamada piconet. En cada piconet se elige un dispositivo maestro que va preguntando a los dem&aacute;s dispositivos (que hacen las funciones de esclavo) qui&eacute;n debe utilizar el medio. En el caso de que alguien lo necesite, lo tendr&aacute; disponible durante cierto tiempo.
+			</p>
+			<h5>4.3.1.2.Redes conmutadas</h5>
+			<p>
+				Cuando se va a enviar datos a largas distancias (e incluso a no tan largas), este debe pasar por varios nodos intermedios. Los cu&aacute;les  son los encargados de dirigir los datos para que lleguen a su destino. Por lo cual se hace uso de lo que es una red conmutada.  ya que estas Consisten en un conjunto de nodos interconectados entre s&iacute;, a trav&eacute;s de medios de transmisi&oacute;n , formando as&iacute;  la mayor&iacute;a de las veces una topolog&iacute;a mallada, donde la informaci&oacute;n se traslada encamin&aacute;ndola del nodo de origen al nodo destino mediante conmutaci&oacute;n entre nodos intermedios. 
+			</p>
+			<ul>
+				Una transmisi&oacute;n de este tipo tiene 3 fases:
+				<li>Establecimiento de la conexi&oacute;n.</li>
+				<li>Transferencia de la informaci&oacute;n.</li>
+				<li>Liberaci&oacute;n de la conexi&oacute;n.</li>
+			</ul><br><br><br><br><br>
+			<p>
+				As&iacute; mismo podemos decir que Se entiende por conmutaci&oacute;n en un nodo, a la conexi&oacute;n f&iacute;sica o l&oacute;gica, de un camino de entrada al nodo con un camino de salida del nodo, con el fin de transferir la informaci&oacute;n.
+				En pocas palabras se puede decir que una red conmutada es aquella que permite la comunicaci&oacute;n de nodo a nodo  a trav&eacute;s de su conexi&oacute;n, para facilitar el traslado de informaci&oacute;n.
+			</p>
+			<h5>4.3.2.Coherencia de cach&eacute;</h5>
+			<p>
+				La coherencia de cache hace referencia a la integridad de los datos almacenados en las caches locales de los recursos compartidos. La coherencia de la cache es un caso especial de la coherencia de memoria.
+			</p>
+			<div class="imagen"><img src="images/MemoryResource.jpg"></img></div>
+			<h6>M&uacute;ltiples caches con recursos comunes.</h6>
+			<p>
+				Cuando los clientes de un sistema, en particular las CPUs en un multiprocesador, mantienen caches de una memoria compartida, los conflictos crecen. Haciendo referencia al dibujo, si el cliente de arriba tiene una copia de un bloque de memoria de una lectura previa y el cliente de abajo cambia ese bloque, el cliente de arriba podr&iacute;a estar trabajando con datos err&oacute;neos, sin tener conocimiento de ello. La coherencia de la cache intenta administrar estos conflictos y mantener consistencia entre las caches y la memoria.
+			</p>
+			<h6>Mecanismos para la coherencia de la cach&eacute;</h6>
+			<p>
+				Los protocolos basados en directorio mantienen un directorio centralizado de los bloques que hay en las caches. Se utilizan tanto en multiprocesadores con memoria f&iacute;sicamente distribuida, como en sistemas con memoria centralizada con red escalable. Estos protocolos de mantenimiento de coherencia reducen el tr&aacute;fico en la red enviando selectivamente &oacute;rdenes s&oacute;lo a aquellas caches que disponen de una copia v&aacute;lida del bloque implicado en la operaci&oacute;n de memoria.
+				El protocolo Snoopy hace que las caches individualmente monitoreen las l&iacute;neas (buses) de direcciones de accesos a memoria con respecto a los bloques que han copiado. Cuando una operaci&oacute;n de escritura es observada sobre una direcci&oacute;n de un bloque del cual tiene un bloque, el controlador de cache invalida su copia. Tambi&eacute;n es posible que el controlador de cache observe la direcci&oacute;n y el dato correspondiente a esa direcci&oacute;n, intentando as&iacute; actualizar su copia cuando alguien modifica dicho bloque en la memoria principal.
+				El protocolo de memoria distribuida imita a los anteriores en un intento de mantener la consistencia entre bloques de memoria en sistemas con d&eacute;bil acoplamiento.
+
+			</p>
+			<h6>Modelos de coherencia</h6>
+			<p>
+				Varios modelos y protocolos han sido desarrollados para mantener la coherencia de la cache, tales como protocolo MSI, protocolo MESI, protocolo MOSI y el protocolo MOESI. La elecci&oacute;n de un modelo de consistencia es crucial a la hora de dise&ntilde;ar un sistema de cache coherente. Los modelos de coherencia difieren en rendimiento y escalabilidad, por lo que deben ser evaluados para cada sistema dise&ntilde;ado.
+				Adem&aacute;s, las transiciones entre estados en una implementaci&oacute;n en concreto de estos protocolos pueden variar. Por ejemplo una implementaci&oacute;n puede elegir diferentes transiciones para actualizar y actualiza tales como actualizaci&oacute;n-en-lectura, actualizaci&oacute;n-en-escritura, invalidaci&oacute;n-en-lectura, o invalidaci&oacute;n-en-escritura. La elecci&oacute;n de una transici&oacute;n puede afectar a la cantidad de tr&aacute;fico entre caches, lo que a su vez podr&iacute;a afectar al ancho de banda disponible por las caches para la operaci&oacute;n actual. Esto debe ser tenido en consideraci&oacute;n en el dise&ntilde;o de software distribuido que podr&iacute;a causar problemas de contenci&oacute;n entre caches de m&uacute;ltiples procesadores.
+			</p>
+			<div class="atras"><a href="4.2.Tipos_de_computación_paralela.html">Atrás</a></div><div class="siguiente"><a href="4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+				
+			</div>
+		</div>
+	</body>
+</html>

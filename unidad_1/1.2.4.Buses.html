@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>1.2.4.Buses</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href=" 1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href=" 1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href=" 1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href=" 1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="../unidad_4/4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="../unidad_4/4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="../unidad_4/4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="centrado">
+			<h1>Unidad I</h1>
+			<hr>
+			<h3>1.2.An&aacute;lisis de los componentes</h3>
+			<hr>
+			<h5>1.2.4.Buses</h5>
+			<hr>
+			<p>
+				BUS: Elemento fundamental de intercomunicaci&oacute;n en la arquitectura de Von Newmann. Se define mediante:
+				<ul>
+					<li>N&uacute;mero y tipo de l&iacute;neas que lo componen.</li>
+					<li>Protocolo de transmisi&oacute;n de informaci&oacute;n.</li>
+				</ul>
+				Consta de un camino que permite comunicar selectivamente un cierto n&uacute;mero de componentes o dispositivos, de acuerdo a unas ciertas reglas o normas de conexi&oacute;n.
+			</p>
+			<div class="imagen2"><img class="empequenecer" src="images/buses.png"></img></div>
+			<p>
+				El bus incluye los conceptos de enlace y conmutador, ya que permite en cada momento seleccionar los dispositivos que se conectan a trav&eacute;s suyo.
+				<ul class="deff">
+					<li>Enlace: Elemento que permite transmitir informaci&oacute;n entre dos o m&aacute;s dispositivos.</li>
+					<li>Conmutador: Elemento que permite encaminar la informaci&oacute;n entre varios enlaces, activando unos e inhibiendo otros.</li>
+					<li>Multiplexado temporal: Utilizaci&oacute;n de las mismas l&iacute;neas del bus para enviar en momentos distintos, informaciones distintas. En estos buses de incluyen se&ntilde;ales adicionales para identificar qu&eacute; informaci&oacute;n est&aacute; circulando por el bus en cada momento.</li>
+					Sistema abierto
+					<li>Sistema que permite acoplar placas de distintos fabricantes.</li>
+					<li>Hasta hace unos a&ntilde;os el estudio de los buses era algo que no se hac&iacute;a, dado que cada fabricante desarrollaba su propio bus.</li>
+					<li>Los sistemas abiertos supusieron la creaci&oacute;n de est&aacute;ndares que garantizan la compatibilidad entre las placas dise&ntilde;adas por distintos fabricantes.</li>
+				</ul>
+			</p>
+			<h6>1.2.4.2.Tipo de buses</h6>
+			<p>
+				SERIE y PARALELO: los primeros transmiten bit a bit y los segundos varios bits a la vez.
+				<ul class="deff">
+					
+					<li>Multiplexado y no multiplexados (dedicados): los multiplexados realizan diferentes funciones en funci&oacute;n de las necesidades del momento.</li>
+					<li>Centralizados y distribuidos: necesidad de determinar qu&eacute; elemento transmite y cu&aacute;l recibe. Generalmente existe administraci&oacute;n centralizada por la CPU o procesador.</li>
+					<li>S&iacute;ncronos y as&iacute;ncronos (temporizaci&oacute;n): c&oacute;mo ocurren los diferentes eventos (comienzo, fin,...) implicados en la transmisi&oacute;n de informaci&oacute;n. Utilizaci&oacute;n de una se&ntilde;al de reloj (comunicaci&oacute;n s&iacute;ncrona) o unas l&iacute;neas de protocolo (comunicaci&oacute;n as&iacute;ncrona).</li>
+				</ul>
+			</p>
+			<h6>1.2.4.3.Estructura de buses</h6>
+			<p>
+				Los buses se componen de l&iacute;neas el&eacute;ctricas que transmiten un “0” (cero voltios) o un “1” (m&aacute;s de cero voltios).
+				<ul class="deff">
+					<li>L&iacute;neas/bus de datos: camino para transferir datos entre el resto de componentes de un computador.
+					Su anchura (n&uacute;mero de l&iacute;neas el&eacute;ctricas) suele ser una potencia de dos (8=23, 16=24, 32=25, 64=26,...).Estructura de los Buses</li>
+					<li>L&iacute;neas/bus de direcciones: designan la posici&oacute;n/direcci&oacute;n de los <li>datos. Son salidas de la CPU/procesador y determinan capacidad de direccionamiento.</li>
+					<li>L&iacute;neas/bus de control: controlan el acceso y uso de las l&iacute;neas/buses anteriores.</li>
+				</ul>
+			</p>
+			<div class="imagen"><img src="images/EstructuraDeBuses.jpg"></img></div>
+			<h6>1.2.4.3.Jerarqu&iacute;a de buses</h6>
+			<p>
+				Compatibilidad entre buses:
+				<ul class="deff">
+					<li>S&oacute;lo si son el&eacute;ctricamente id&eacute;nticos. Las caracter&iacute;sticas de los diferentes tipos de buses deben estar normalizadas. Ejemplo: bus PCI, AGP, USB, FireWire...Jerarqu&iacute;as de Buses</li>
+					<li>Antiguamente s&oacute;lo exist&iacute;a un bus principal que lo conectaba todo: bus del sistema.</li>
+					<li>Actualmente existe un conjunto de buses conectados entre s&iacute; y formando una jerarqu&iacute;a.</li>
+					<li>Facilita la mejora del rendimiento de todo el computador al agrupar dentro de los diferentes tipos de buses aquellos componentes del ordenador que tienen aproximadamente la misma velocidad de transmisi&oacute;n de la informaci&oacute;n.</li>
+					<li>Mientras m&aacute;s lejos del CPU, buses m&aacute;s lentos y normalmente de menos l&iacute;neas de datos. </li>
+					Jerarqu&iacute;as de Buses
+					Varios tipos de buses en funci&oacute;n de su posici&oacute;n dentro de la jerarqu&iacute;a:
+					<li>Bus de CPU o “bus local” del procesador: elementos m&aacute;s r&aacute;pidos tales como la memoria cach&eacute;.</li>
+					<li>Bus local &oacute; bus del Sistema (Front Side Bus): conecta elementos tales como la memoria principal o dispositivos r&aacute;pidos (por ejemplo AGP).</li>
+					<li>Bus de expansi&oacute;n y/o E/S: PCI, USB, ATA, SCSI,...</li>
+				</ul>
+			</p>
+			<div class="imagen"><img src="images/buses2.jpg"></img></div>
+			<div class="imagen"><img src="images/buses3.jpg"></img></div>
+			<div class="atras"><a href="1.2.3.Manejo de la entrada_salida.html">Atrás</a></div><div class="siguiente"><a href="1.2.5.Interrupciones.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+				Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>4.2.Tipos de computaci&oacute;n paralela</title><title>3.3.Ambientes de servicio</title><link rel="stylesheet" type="text/css" href="../recursos/hojas_de_estilo/index.css"></link>
+	</head>
+	<body>
+		<div class="arriba">
+			<div class="Header2">
+			<ul><li><a class="inicio" href="../index.html">Inicio</a></li></ul>
+			<ul>
+				<li class="principal"><a>
+					Unidad I</a>
+					<ul>
+						<li ><a class="subtema">1.1.Modelos de arquitectura de computadora</a>
+							<ul>
+								<li><a href="../unidad_1/1.1.1.ArquitecturasClasicas.html">Clásicas</a></li>
+								<li><a href="../unidad_1/1.1.2.ArquitecturasSegmentadas.html">Segmentadas</a></li>
+								<li><a href="../unidad_1/1.1.3.Arquitecturas_de_multiprocesamiento.html">Multiprocesamiento</a></li>
+							</ul>
+						</li>
+						<li><a class="subtema">1.2.An&aacute;lisis de componentes</a>
+							<ul>
+								<li><a href="../unidad_1/1.2.1.UnidadCentralDeProcesamiento.html">
+									Unidad Central de Procesamiento</a>
+								</li>
+								<li><a href="../unidad_1/1.2.2.Memoria.html">
+									Memoria</a>
+								</li>
+								<li><a href="../unidad_1/1.2.3.Manejo de la entrada_salida.html">
+									Manejo Entrada/Salida</a>
+								</li>
+								<li><a href="../unidad_1/1.2.4.Buses.html">Buses</a>
+								</li>
+								<li><a href="../unidad_1/1.2.5.Interrupciones.html">Interrupciones</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad II</a>
+					<ul>
+					  <li><a class="subtema">
+						Estructura y funcionamiento de la Unidad Central de Procesamiento</a>
+						<ul>
+							<li><a href="../unidad_2/2.1.Oranizacion_del_procesador.html">
+								Organizaci&oacute;n del procesador</a>
+							</li>
+							<li><a href="../unidad_2/2.2.Estructura_de_registros.html">
+								Estructura de registros</a>
+							</li>
+							<li><a href="../unidad_2/2.3.El_ciclo_de_instruccion.html">
+								El ciclo de la instrucci&oacute;n</a>
+							</li>
+						</ul>
+					  </li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad III</a>
+					<ul>
+						<li><a class="subtema">
+							Selecci&oacute;n de componentes para ensamble de equipos de c&oacute;mputo</a>
+							<ul>
+								<li><a href="../unidad_3/3.1.Chip_Set.html">Chip set</a></li>
+								<li><a href="../unidad_3/3.2.Aplicaciones.html">Aplicaciones</a></li>
+								<li><a href="../unidad_3/3.3.Ambiente_de_servicio.html">Ambientes de servicio</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul>
+				<li class="principal"><a>
+					Unidad IV</a>
+					<ul>
+						<li><a class="subtema">
+							Procesamiento paralelo</a>
+							<ul>
+								<li><a href="4.1.Aspectos_basicos_de_la_computacion.html">
+									Aspectos b&aacute;sicos de la computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.2.Tipos_de_computación_paralela.html">
+									Tipos de computaci&oacute;n paralela</a>
+								</li>
+								<li><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">
+									Sistema de memoria; multiprocesamiento</a>
+								</li>
+								<li><a href="4.4.Sistemas_de_memoria_distribuida_multicomputadoras_clusters.html">
+									Sistemas de memoria distribuida; multicomputadoras</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="centrado">
+			<h1>Unidad IV</h1>
+			<hr>
+			<h3>4.Procesamiento paralelo.</h3>
+			<hr>
+			<h5>4.2.Tipos de computaci&oacute;n paralela</h5>
+			<h6>Paralismo a nivel de bit</h6>
+			<p>
+				Desde el advenimiento de la integraci&oacute;n a gran escala (VLSI) como tecnolog&iacute;a de fabricaci&oacute;n de chips de computadora en la d&eacute;cada de 1970 hasta alrededor de 1986, la aceleraci&oacute;n en la arquitectura de computadores se lograba en gran medida duplicando el tama&ntilde;o de la palabra en la computadora, la cantidad de informaci&oacute;n que el procesador puede manejar por ciclo. 
+				El aumento del tama&ntilde;o de la palabra reduce el n&uacute;mero de instrucciones que el procesador debe ejecutar para realizar una operaci&oacute;n en variables cuyos tama&ntilde;os son mayores que la longitud de la palabra. Por ejemplo, cuando un procesador de 8 bits debe sumar dos enteros de 16 bits, el procesador primero debe adicionar los 8 bits de orden inferior de cada n&uacute;mero entero con la instrucci&oacute;n de adici&oacute;n, a continuaci&oacute;n, a&ntilde;adir los 8 bits de orden superior utilizando la instrucci&oacute;n de adici&oacute;n con acarreo que tiene en cuenta el bit de acarreo de la adici&oacute;n de orden inferior, en este caso un procesador de 8 bits requiere dos instrucciones para completar una sola operaci&oacute;n, en donde un procesador de 16 bits necesita una sola instrucci&oacute;n para poder completarla.
+				Hist&oacute;ricamente, los microprocesadores de 4 bits fueron sustituidos por unos de 8 bits, luego de 16 bits y 32 bits, esta tendencia general lleg&oacute; a su fin con la introducci&oacute;n de procesadores de 64 bits, lo que ha sido un est&aacute;ndar en la computaci&oacute;n de prop&oacute;sito general durante la &uacute;ltima d&eacute;cada.
+			</p>
+			<h6>Paralismo a nivel de instrucci&oacute;n</h6>
+			<p>
+				Un programa de ordenador es, en esencia, una secuencia de instrucciones ejecutadas por un procesador. Estas instrucciones pueden reordenarse y combinarse en grupos que luego son ejecutadas en paralelo sin cambiar el resultado del programa. Esto se conoce como paralelismo a nivel de instrucci&oacute;n. Los avances en el paralelismo a nivel de instrucci&oacute;n dominaron la arquitectura de computadores desde mediados de 1980 hasta mediados de la d&eacute;cada de 1990.
+				Los procesadores modernos tienen ''pipeline'' de instrucciones de varias etapas. Cada etapa en el pipeline corresponde a una acci&oacute;n diferente que el procesador realiza en la instrucci&oacute;n correspondiente a la etapa; un procesador con un pipelinede N etapas puede tener hasta n instrucciones diferentes en diferentes etapas de finalizaci&oacute;n. El ejemplo can&oacute;nico de un procesador segmentado es un procesador RISC, con cinco etapas: pedir instrucci&oacute;n, decodificar, ejecutar, acceso a la memoria y escritura. El procesador Pentium 4 ten&iacute;a un pipeline de 35 etapas.
+				Adem&aacute;s del paralelismo a nivel de instrucci&oacute;n del pipelining, algunos procesadores pueden ejecutar m&aacute;s de una instrucci&oacute;n a la vez. Estos son conocidos como procesadores superescalares. Las instrucciones pueden agruparse juntas s&oacute;lo si no hay dependencia de datos entre ellas. El scoreboarding y el algoritmo de Tomasulo —que es similar a scoreboarding pero hace uso del renombre de registros— son dos de las t&eacute;cnicas m&aacute;s comunes para implementar la ejecuci&oacute;n fuera de orden y la paralelizaci&oacute;n a nivel de instrucci&oacute;n.
+			</p>
+			<div class="imagen"><img src="images/imagen_de_tabla.jpg"></img></div>
+			<p>
+				Un pipeline can&oacute;nico de cinco etapas en una m&aacute;quina RISC (IF = Pedido de Instrucci&oacute;n, ID = Decodificaci&oacute;n de instrucci&oacute;n, EX = Ejecutar, MEM = Acceso a la memoria, WB = Escritura).
+			</p>
+			<h6>Paralelismo de datos</h6>
+			<p>
+				El paralelismo de datos es el paralelismo inherente en programas con ciclos, que se centra en la distribuci&oacute;n de los datos entre los diferentes nodos computacionales que deben tratarse en paralelo. La paralelizaci&oacute;n de ciclos conduce a menudo a secuencias similares de operaciones —no necesariamente id&eacute;nticas— o funciones que se realizan en los elementos de una gran estructura de datos. Muchas de las aplicaciones cient&iacute;ficas y de ingenier&iacute;a muestran paralelismo de datos.
+				Una dependencia de terminaci&oacute;n de ciclo es la dependencia de una iteraci&oacute;n de un ciclo en la salida de una o m&aacute;s iteraciones anteriores. Las dependencias de terminaci&oacute;n de ciclo evitan la paralelizaci&oacute;n de ciclos.
+			</p>
+			<div class="imagen"><img src="images/imagen_de_tabla2.jpg"></img></div>
+			<p>
+				Un procesador superescalar con pipeline de cinco etapas, capaz de ejecutar dos instrucciones por ciclo. Puede tener dos instrucciones en cada etapa del pipeline, para un total de hasta 10 instrucciones (se muestra en verde) ejecutadas simult&aacute;neamente.
+			</p>
+			<h6>Paralelismo de tareas</h6>
+			<p>
+				El paralelismo de tareas es la caracter&iacute;stica de un programa paralelo en la que c&aacute;lculos completamente diferentes se pueden realizar en cualquier conjunto igual o diferente de datos. Esto contrasta con el paralelismo de datos, donde se realiza el mismo c&aacute;lculo en distintos o mismos grupos de datos. El paralelismo de tareas por lo general no escala con el tama&ntilde;o de un problema.
+			</p>
+			<h5>4.2.1.Taxonom&iacute;a de arquitectura paralelas</h5>
+			<p>
+				La clasificaci&oacute;n de Flynn ha demostrado funcionar bastante bien para la tipificaci&oacute;n de sistemas, y se ha venido usando desde d&eacute;cadas por la mayor&iacute;a de los arquitectos de computadores. Sin embargo, los avances en tecnolog&iacute;a y diferentes topolog&iacute;as, han llevado a sistemas que no son tan f&aacute;ciles de clasificar dentro de los 4 tipos de Flynn. Por ejemplo, los procesadores vectoriales no encajan adecuadamente en esta clasificaci&oacute;n, ni tampoco las arquitecturas hibridas. Para solucionar esto se han propuesto otras clasificaciones, donde los tipos SIMD y MIMD de Flynn se suelen conservar, pero que sin duda no han tenido el &eacute;xito de la de Flynn.
+				La figura 4.2 muestra una taxonom&iacute;a ampliada que incluye alguno de los avances en arquitecturas de computadores en los &uacute;ltimos a&ntilde;os. No obstante, tampoco pretende ser una caracterizaci&oacute;n completa de todas las arquitecturas paralelas existentes.
+			</p>
+			<div class="imagen"><img src="images/arquitecturasParalelas.jpg"></img></div>
+			<br><hr>
+			<h5>4.2.2.Arquitectuas de los computadores secuenciales</h5>
+			<hr>
+			<h5>4.2.2.1.Taxonom&iacute;a de Flynn</h5><hr>
+			<p>
+				Probablemente la clasificaci&oacute;n m&aacute;s popular de computadores sea la clasificaci&oacute;n de Flynn. Esta tax&oacute;noma de las arquitecturas est&aacute; basada en la clasificaci&oacute;n atendiendo al flujo de datos e instrucciones en un sistema. Un flujo de instrucciones es el conjunto de instrucciones secuenciales que son ejecutadas por un &uacute;nico procesador, y un flujo de datos es el flujo secuencial de datos requeridos por el flujo de instrucciones. Con estas consideraciones, Flynn clasifica los sistemas en cuatro categor&iacute;as:
+				SISD (Single Instruction stream, Single Data stream) Flujo &uacute;nico de instrucciones y flujo &uacute;nico de datos. Este el concepto de arquitectura serie de Von Neumann donde, en cualquier momento, s&oacute;lo se est&aacute; ejecutando una &uacute;nica instrucci&oacute;n. A menudo a los SISD se les conoce como computadores serie escalares. Todas las maquinas SISD poseen un registro simple que se llama contador de programa que asegura la ejecuci&oacute;n en serie del programa. Conforme se van leyendo las instrucciones de la memoria, el contador de programa se actualiza para que apunte a la siguiente instrucci&oacute;n a procesar en serie. Pr&aacute;cticamente ning&uacute;n computador puramente SISD se fabrica hoy en d&iacute;a ya que la mayor&iacute;a de procesadores modernos incorporan alg&uacute;n grado de paralelizacion como es la segmentaci&oacute;n de instrucciones o la posibilidad de lanzar dos instrucciones a un tiempo (superescalares).
+				MISD (Multiple Instruction stream, Single Data stream) Flujo m&uacute;ltiple de instrucciones y &uacute;nico flujo de datos. Esto significa que varias instrucciones act&uacute;an sobre el mismo y &uacute;nico trozo de datos. Este tipo de m&aacute;quinas se pueden interpretar de dos maneras. Una es considerar la clase de m&aacute;quinas que requerir&iacute;an que unidades de procesamiento diferentes recibieran instrucciones distintas operando sobre los mismos datos. Esta clase de arquitectura ha sido clasificada por numerosos arquitectos de computadores como impracticable o imposible, y en estos momentos no existen ejemplos que funcionen siguiendo este modelo. Otra forma de interpretar los MISD es como una clase de m&aacute;quinas donde un mismo flujo de datos fluye a trav&eacute;s de numerosas unidades procesadoras. Arquitecturas altamente segmentadas, como los arrays sist&oacute;licos o los procesadores vectoriales, son clasificados a menudo bajo este tipo de m&aacute;quinas. Las arquitecturas segmentadas, o encauzadas, realizan el procesamiento vectorial a trav&eacute;s de una serie de etapas, cada una ejecutando una funci&oacute;n particular produciendo un resultado intermedio. La raz&oacute;n por la cual dichas arquitecturas son clasificadas como MISD es que los elementos de un vector pueden ser considerados como pertenecientes al mismo dato, y todas las etapas del cauce representan m&uacute;ltiples instrucciones que son aplicadas sobre ese vector.
+				SIMD (Single Instruction stream, Multiple Data stream) Flujo de instrucci&oacute;n simple y flujo de datos m&uacute;ltiple. Esto significa que una &uacute;nica instrucci&oacute;n es aplicada sobre diferentes datos al mismo tiempo. En las m&aacute;quinas de este tipo, varias unidades de procesado diferentes son invocadas por una &uacute;nica unidad de control. Al igual que las MISD, las SIMD soportan procesamiento vectorial (matricial) asignando cada elemento del vector a una unidad funcional diferente para procesamiento concurrente.
+				Por ejemplo, el c&aacute;lculo de la paga para cada trabajador en una empresa, es repetir la misma operaci&oacute;n sencilla para cada trabajador; si se dispone de una arquitectura SIMD esto se puede calcular en paralelo para cada trabajador. Por esta facilidad en la paralelizacion de vectores de datos (los trabajadores formar&iacute;an un vector) se les llama tambi&eacute;n procesadores matriciales.
+				MIMD (Multiple Instruction stream, Multiple Data stream) Flujo de instrucciones m&uacute;ltiple y flujo de datos m&uacute;ltiple. Son m&aacute;quinas que poseen varias unidades procesadoras en las cuales se pueden realizar m&uacute;ltiples instrucciones sobre datos diferentes de forma simult&aacute;nea. Las MIMD son las m&aacute;s complejas, pero son tambi&eacute;n las que potencialmente ofrecen una mayor eficiencia en la ejecuci&oacute;n concurrente o paralela. Aqu&iacute; la concurrencia implica que no s&oacute;lo hay varios procesadores operando simult&aacute;neamente, sino que adem&aacute;s hay varios programas (procesos) ejecut&aacute;ndose tambi&eacute;n al mismo tiempo.
+			</p>
+			<div class="imagen"><img src="images/clasificacionDeFlynn.jpg"></img></div>
+			<h5>4.2.2.1.Taxonom&iacute;a de Flynn</h5>
+			<p>
+				La memoria de acceso secuencial son memorias en la cuales para acceder a un registro en particular se tienen que leer registro por registro desde el index hasta alcanzar el registro particular que contiene el dato que se requiere. Estas memorias se clasifican en:
+				<ul>
+					<li>Registros de desplazamiento.</li>
+					<li>Dispositivos por acoplamiento por carga.</li>
+					<li>Memorias de burbuja.</li>
+				</ul>
+			</p><br><br><br><br><br><br>
+			<div class="atras"><a href="4.1.Aspectos_basicos_de_la_computacion.html">Atrás</a></div><div class="siguiente"><a href="4.3.Sistema_de_memoria_compartida_multiprocesamiento.html">Siguiente</a></div>
+			<div class="abajo">
+				<p>Dise&ntilde;ado por:</p>
+			<p>Alumna: Gabriela González González<br>
+
+No.Control:18052288<br>
+
+Clase: Arquitectura de las computadoras <br>
+Semestre:Enero-Julio 2020<br>
+Hora clase: 5:00pm-6:00pm</p><br>
+				
+			</div>
+		</div>
+	</body>
+</html>
